@@ -6,7 +6,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bank</shortDescription>
-        <value>Solarisbank AG</value>
+        <value>!PUT YOUR BANK HERE!</value>
     </labels>
     <labels>
         <fullName>Anschrift</fullName>
@@ -14,7 +14,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Address</shortDescription>
-        <value>Rosenthaler Str. 5, 10119 Berlin</value>
+        <value>!PUT COMPANY ADDRESS!</value>
     </labels>
     <labels>
         <fullName>BIC</fullName>
@@ -22,7 +22,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BIC</shortDescription>
-        <value>SOBKDEB2XXX</value>
+        <value>!PUT BIC!</value>
     </labels>
     <labels>
         <fullName>Company_Name</fullName>
@@ -30,7 +30,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Name</shortDescription>
-        <value>Lanespot Solutions</value>
+        <value>"PUT COMPANY NAME"</value>
     </labels>
     <labels>
         <fullName>Company_Postalcode</fullName>
@@ -38,7 +38,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Postalcode</shortDescription>
-        <value>10119 Berlin</value>
+        <value>!PUT POSTAL CODE AND CITY!</value>
     </labels>
     <labels>
         <fullName>Company_Street</fullName>
@@ -46,7 +46,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Street</shortDescription>
-        <value>Rosenthaler Str. 5</value>
+        <value>!PUT COMPANY STREET AND NUMBER!</value>
     </labels>
     <labels>
         <fullName>Contact_Email</fullName>
@@ -54,7 +54,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Contact Email</shortDescription>
-        <value>iemilov@lanespot.com</value>
+        <value>!PUT CONTACT EMAIL!</value>
     </labels>
     <labels>
         <fullName>EmailTemplate_SendInvoice_DE</fullName>
@@ -78,7 +78,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>IBAN</shortDescription>
-        <value>DE90110101015776664608</value>
+        <value>!PUT BANK IBAN HERE!</value>
     </labels>
     <labels>
         <fullName>Mobile</fullName>
@@ -86,7 +86,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Mobile</shortDescription>
-        <value>+(49) 15140748149</value>
+        <value>!COMPANY MOBILE COMES HERE!</value>
     </labels>
     <labels>
         <fullName>Steuernummer</fullName>
@@ -94,7 +94,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Steuernummer</shortDescription>
-        <value>34/277/04078</value>
+        <value>!Steuernummer comes here!</value>
     </labels>
     <labels>
         <fullName>USt_ldNr</fullName>
@@ -102,7 +102,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>USt-ldNr</shortDescription>
-        <value>DE343779945</value>
+        <value>!UMSATZSTEUERID comes HERE!</value>
     </labels>
     <labels>
         <fullName>BccAddresses</fullName>
@@ -110,6 +110,6 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bcc Addresses</shortDescription>
-        <value>is.emilov@gmail.com</value>
+        <value>!BCC EMAIL ADDRESS COMES HERE!</value>
     </labels>
 </CustomLabels>
