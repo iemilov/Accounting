@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waren, Rohstoffe und Hilfsstoffe einschließlich der Nebenkosten</fullName>
+                <default>false</default>
+                <label>Waren, Rohstoffe und Hilfsstoffe einschließlich der Nebenkosten</label>
+            </value>
+            <value>
+                <fullName>Bezogene Fremdleistungen</fullName>
+                <default>false</default>
+                <label>Bezogene Fremdleistungen</label>
+            </value>
+            <value>
+                <fullName>Ausgaben für eigenes Personal</fullName>
+                <default>false</default>
+                <label>Ausgaben für eigenes Personal</label>
+            </value>
+            <value>
+                <fullName>Aufwendungen für Telekommunikation</fullName>
+                <default>false</default>
+                <label>Aufwendungen für Telekommunikation</label>
+            </value>
+            <value>
+                <fullName>Übernachtungs- und Reisenebenkosten bei Geschäftsreisen des Steuerpflichtigen</fullName>
+                <default>false</default>
+                <label>Übernachtungs- und Reisenebenkosten bei Geschäftsreisen des Steuerpflichtigen</label>
+            </value>
+            <value>
+                <fullName>Fortbildungskosten</fullName>
+                <default>false</default>
+                <label>Fortbildungskosten</label>
+            </value>
+            <value>
+                <fullName>Kosten für Beratungsleistungen und Buchführung</fullName>
+                <default>false</default>
+                <label>Kosten für Beratungsleistungen und Buchführung</label>
+            </value>
+            <value>
+                <fullName>Miete / Leasing für bewegliche Wirtschaftsgüter (ohne Kraftfahrzeuge)</fullName>
+                <default>false</default>
+                <label>Miete / Leasing für bewegliche Wirtschaftsgüter (ohne Kraftfahrzeuge)</label>
+            </value>
+            <value>
+                <fullName>Beiträge, Gebühren, Abgaben und Versicherungen</fullName>
+                <default>false</default>
+                <label>Beiträge, Gebühren, Abgaben und Versicherungen</label>
+            </value>
+            <value>
+                <fullName>Werbekosten</fullName>
+                <default>false</default>
+                <label>Werbekosten</label>
+            </value>
+            <value>
+                <fullName>Schuldzinsen</fullName>
+                <default>false</default>
+                <label>Schuldzinsen</label>
+            </value>
+            <value>
+                <fullName>Gezahlte Vorsteuerbeträge</fullName>
+                <default>false</default>
+                <label>Gezahlte Vorsteuerbeträge</label>
+            </value>
+            <value>
+                <fullName>An das Finanzamt gezahlte und ggf. verrechnete Umsatzsteuer</fullName>
+                <default>false</default>
+                <label>An das Finanzamt gezahlte und ggf. verrechnete Umsatzsteuer</label>
+            </value>
+            <value>
+                <fullName>Bildung von Rücklagen</fullName>
+                <default>false</default>
+                <label>Bildung von Rücklagen</label>
+            </value>
+            <value>
+                <fullName>Übrige unbeschränkt abziehbare Betriebsausgaben</fullName>
+                <default>false</default>
+                <label>Übrige unbeschränkt abziehbare Betriebsausgaben</label>
+            </value>
+            <value>
+                <fullName>Bewirtungsaufwendungen</fullName>
+                <default>false</default>
+                <label>Bewirtungsaufwendungen</label>
+            </value>
+            <value>
+                <fullName>Geschenke</fullName>
+                <default>false</default>
+                <label>Geschenke</label>
+            </value>
+            <value>
+                <fullName>Leasingkosten, Steuern, Versicherungen und Maut</fullName>
+                <default>false</default>
+                <label>Leasingkosten, Steuern, Versicherungen und Maut</label>
+            </value>
+            <value>
+                <fullName>Sonstige tatsächliche Fahrkosten</fullName>
+                <default>false</default>
+                <label>Sonstige tatsächliche Fahrkosten</label>
+            </value>
+            <value>
+                <fullName>Fahrtkoste für gewerblich genutzte Privatfahrzeuge</fullName>
+                <default>false</default>
+                <label>Fahrtkoste für gewerblich genutzte Privatfahrzeuge</label>
+            </value>
+            <value>
+                <fullName>Wege zwischen Wohnung und erster Betriebsstätte und Familienheimfahrten</fullName>
+                <default>false</default>
+                <label>Wege zwischen Wohnung und erster Betriebsstätte und Familienheimfahrten</label>
+            </value>
+            <value>
+                <fullName>GWG</fullName>
+                <default>false</default>
+                <label>GWG</label>
+            </value>
+            <value>
+                <fullName>Verpflegungsmehraufwendungen</fullName>
+                <default>false</default>
+                <label>Verpflegungsmehraufwendungen</label>
+            </value>
+            <value>
+                <fullName>Bürobedarf</fullName>
+                <default>false</default>
+                <label>Bürobedarf</label>
+            </value>
+            <value>
+                <fullName>Spenden</fullName>
+                <default>false</default>
+                <label>Spenden</label>
+            </value>
+            <value>
+                <fullName>Kinderbetreuung</fullName>
+                <default>false</default>
+                <label>Kinderbetreuung</label>
+            </value>
+            <value>
+                <fullName>Krankenkasse</fullName>
+                <default>false</default>
+                <label>Krankenkasse</label>
+            </value>
+            <value>
+                <fullName>Rente</fullName>
+                <default>false</default>
+                <label>Rente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

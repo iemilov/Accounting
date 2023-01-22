@@ -1,0 +1,185 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-21-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   10-16-2020   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+
+
+<apex:page showHeader="false" standardController="Invoice__c" extensions="PM_generateInvoicePDF_VF_CTRL" action="{!updateInvoice}" standardStylesheets="false" renderAs="PDF">
+
+<div >
+    <img src="{!$Resource.Lanespot}" width="15%"/>
+</div>
+
+<p><u>{!$Label.Company_Name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!$Label.Anschrift} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile: {!$Label.Mobile}</u></p>
+<p style="text-align: left;">{!Invoice__c.DisplayAccountName__c}<br /> {!Invoice__c.DisplayAccountBillingAddress__c}<br /> {!Invoice__c.DisplayAccountBillingCity__c}</p>
+<p style="text-align: right;">
+  <strong>
+    Rechnungsdatum:
+    <apex:outputText value="{0, date, MMMM d','  yyyy}">
+      <apex:param value="{!NOW()}" />
+    </apex:outputText>
+  </strong>
+</p>
+<p style="text-align: right;">
+  <strong>
+  Leistungszeitraum: {!Invoice__c.PerformanceMonth__c}
+  </strong>
+</p>
+<br />
+<p style="text-align: left;">
+  <strong>Betreff: Rechnung {!Invoice__c.Name}</strong>
+</p>
+
+<p>Sehr geehrte Damen und Herren,</p>
+<p>Hiermit stelle ich Ihnen die folgenden Positionen in Rechnung.</p>
+
+
+
+<!-- START Table Resources-->
+
+<apex:pageBlock >
+  <apex:pageBlockTable style="border:1px solid black" value="{!positionsMap}" var="p" border="1px solid black">
+      <apex:column style="border:1px solid black" width="80px" >
+        <apex:facet name="header"> Pos </apex:facet>
+        <apex:outputText value="{!p}"/>
+      </apex:column>
+      <apex:column style="border:1px solid black" width="210px" >
+        <apex:facet name="header"> Produkt </apex:facet>
+        <apex:outputText value="{!positionsMap[p].provided_service}"/>
+      </apex:column>
+      <apex:column style="border:1px solid black" width="120px" >
+        <apex:facet name="header"> Stundensatz </apex:facet>
+        <apex:outputText value="{0,number,###0.0€}">
+          <apex:param value="{!positionsMap[p].daily_rate}" />
+        </apex:outPutText>
+      </apex:column>
+      <apex:column style="border:1px solid black" width="110px" >
+        <apex:facet name="header"> Stunden </apex:facet>
+        <apex:outputText value="{!positionsMap[p].worked_hours}"/>
+      </apex:column>
+      <apex:column style="border:1px solid black" width="110px" >
+        <apex:facet name="header"> Betrag </apex:facet>
+        <apex:outputText value="{0,number,###0.00€}">
+          <apex:param value="{!positionsMap[p].amount}" />
+        </apex:outPutText>
+
+      </apex:column>
+  </apex:pageBlockTable>
+</apex:pageBlock>
+
+<!-- END Table Resources-->
+
+<table width="643">
+<tbody>
+<tr>
+<td width="520">
+<p><strong>Zwischensumme Netto</strong></p>
+</td>
+<td width="107">
+<!--p>{!Invoice__c.Amount__c} &euro;</p-->
+<p>
+  <apex:outputText value="{0,number,###0.00}">
+    <apex:param value="{!total_amount_all_resources}" />
+  </apex:outPutText>
+  &euro;
+</p>
+</td>
+</tr>
+<tr>
+<td width="520">
+<p><strong>Umsatzsteuer 19%</strong></p>
+</td>
+<td width="107">
+<p>
+  <apex:outputText value="{0,number,###0.00}">
+  <apex:param value="{!total_amount_all_resources * 0.19}" />
+  </apex:outPutText>
+  &euro;
+</p>
+</td>
+</tr>
+<tr>
+<td width="520">
+<p><strong>Gesamtbetrag</strong></p>
+</td>
+<td width="107">
+  <p>
+    <apex:outputText value="{0,number,###0.00}">
+    <apex:param value="{!total_amount_all_resources * 0.19 + total_amount_all_resources}" />
+    </apex:outPutText>
+    &euro;
+  </p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><br />Bitte bezahlen Sie die Rechnung an die unten genannte Bankverbindung.</p>
+<p>Mit freundlichen Gr&uuml;&szlig;en<br /> Ivan Emilov</p>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+-------------------------------------------------------------------------------------------------------------------------------------
+<table >
+  <tr>
+    <td width="250">
+      <p style="text-align: left;">{!$Label.Company_Name}<br /> {!$Label.Company_Street}<br /> {!$Label.Company_PostalCode}</p>
+    </td>
+    <td width="200" >
+      <p style="text-align: left;">St-Nr.: {!$Label.Steuernummer} <br /> USt-ldNr.: {!$Label.USt_ldNr} </p>
+    </td>
+    <!--td width="200" ><p style="text-align: left;">UMst-Nr.: 34/277/04078</p></td-->
+    <td width="250">
+      <p style="text-align: left;"> E-Mail: {!$Label.Contact_Email}</p>
+    </td>
+    <td width="320">
+      <!--p style="text-align: left;">Bank: Deutsche Bank<br /> IBAN: DE45100700240145115200 <br />BIC: DEUTDEDBBER</p-->
+      <p style="text-align: left;">Bank: {!$Label.Bank}<br /> IBAN: {!$Label.IBAN} <br />BIC: {!$Label.BIC}</p>
+    </td>
+  </tr>
+</table>
+
+<!--p>Lanespot Solutions&nbsp; &nbsp; &nbsp;St-Nr.: 34/277/04078&nbsp; &nbsp; &nbsp;Telefon: +(49) 151 40748149&nbsp; &nbsp; &nbsp; Bank: Deutsche Bank <br /> 
+Rosenthaler Str. 5&nbsp; &nbsp; &nbsp;      &nbsp; &nbsp; &nbsp;E-Mail: iemilov@lanespot.com &nbsp; &nbsp; &nbsp; IBAN: DE45 1007 0024 0145 1152 00 </p-->
+<br/>
+<br/>
+<br/>
+<!--/div >
+  <img src="{!$Resource.Lanespot}" width="15%"/>
+</div-->
+<br/>
+
+<apex:pageBlock >
+  <!--apex:relatedList list="Times__r" /-->
+<apex:pageBlockTable style="border:1px solid black" value="{!times}" var="time" border="1px solid black">
+      <apex:column style="border:1px solid black" width="100px" >
+        <apex:facet name="header"> Hours </apex:facet>
+        <apex:outputText value="{!time.Hours__c}"/>
+      </apex:column>
+      <apex:column style="border:1px solid black" width="470px" >
+        <apex:facet name="header"> Description </apex:facet>
+        <apex:outputtext style="white-space:pre-wrap;" value="{!time.Description__c}" escape="false" /><br /> 
+      </apex:column>
+      <apex:column style="border:1px solid black" width="150px">
+        <apex:facet name="header"> Date </apex:facet>
+        <apex:outputtext value="{0, date, medium}">
+          <apex:param value="{!time.Date__c}"></apex:param>
+        </apex:outputtext>
+      </apex:column>
+      <apex:column style="border:1px solid black" width="350px">
+        <apex:facet name="header"> Project </apex:facet>
+        <apex:outputText value="{!time.Project__r.Name}"/>
+      </apex:column>
+  </apex:pageBlockTable>
+</apex:pageBlock>
+
+</apex:page>

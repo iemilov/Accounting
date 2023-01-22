@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PerformanceMonth__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Month__c) + &apos;, &apos;+ TEXT(YEAR(DATEVALUE(CreatedDate)))
+/*TEXT(Month__c) + &apos;, &apos;+TEXT(YEAR(TODAY()))
+TEXT(Month__c) + &apos;, &apos;+&apos;2022&apos;*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Performance Month</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

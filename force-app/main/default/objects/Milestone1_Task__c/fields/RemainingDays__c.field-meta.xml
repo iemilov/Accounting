@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RemainingDays__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Due_Date__c - Today() &gt; 7 &amp;&amp; NOT(ISPICKVAL(Task_Stage__c, &quot;Done&quot;)), 
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;green&quot;, 15, 15) + &quot;  Remaining days &quot; + TEXT(Due_Date__c - Today()),
+
+IF( Due_Date__c - Today() &gt;= 3 &amp;&amp; NOT(ISPICKVAL(Task_Stage__c, &quot;Done&quot;)),
+IMAGE(&quot;/img/samples/flag_yellow.gif&quot;, &quot;yellow&quot;, 15, 15) + &quot;  Remaining days &quot; + TEXT(Due_Date__c - Today()),
+
+IF( Due_Date__c - Today() &gt;= 0 &amp;&amp; NOT(ISPICKVAL(Task_Stage__c, &quot;Done&quot;)),
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;red&quot;, 15, 15) + &quot;  Remaining days &quot; + TEXT(Due_Date__c - Today()),
+
+IF( Due_Date__c - Today() &lt; 0 &amp;&amp; NOT(ISPICKVAL(Task_Stage__c, &quot;Done&quot;)),
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;&quot;, 15, 15) + &quot;  Overdue days &quot; + TEXT(Due_Date__c - Today()),
+/*IMAGE(&quot;/img/samples/rating5.gif&quot;, &quot;&quot;, 15, 15) + &quot;  days &quot; + TEXT(Due_Date__c - Today())*/
+IMAGE(&quot;/resource/1523798147000/GraphicsPackNew/silk/16/silk/medal_gold_1.png&quot;, &quot;&quot;)  + &quot;  days &quot; + TEXT(Due_Date__c - Today())
+
+
+))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Remaining Days</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,78 @@
+<!--quickAdd.cmp-->
+<aura:component controller="PM_generateInvoicePDF_CTRL" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+
+    <ltng:require styles="{!$Resource.ModalWidthCSS}"/>
+
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium" >Invoice Customer</h4>
+    </div>
+
+    <aura:html tag="style">
+        .slds-modal__content{
+        height:unset !important;
+        max-height:unset !important;
+        }
+    </aura:html>
+
+    <aura:attribute name="getLanguage" type="String" />
+    <aura:attribute name="getInvoiceStatus" type="String" />
+    <aura:attribute name="getInvoiceUrl" type="String" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="invoice" type="Invoice__c"/>
+    <aura:attribute name="recordLoadError" type="String" />
+    
+    <force:recordData
+    recordId="{!v.recordId}"
+    targetFields="{!v.invoice}"
+    fields="['Language__c', 'Status__c', 'InvoiceUrl__c']"
+    recordUpdated="{!c.recordLoaded}"
+    />
+
+    <!-- MODAL BODY -->
+
+    <aura:if isTrue="{!and(v.getLanguage=='German',v.getInvoiceStatus=='Draft')}">
+        <div class="slds-modal__content slds-align_absolute-center slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+            <iframe src="{! v.getInvoiceUrl +'apex/PM_generateInvoicePDF_DE?Id=' + v.recordId }" width="100%" height="500px;" frameBorder="0"/>
+        </div> 
+    </aura:if>
+
+    <aura:if isTrue="{!and(v.getLanguage=='English', v.getInvoiceStatus=='Draft')}">
+        <div class="slds-modal__content slds-align_absolute-center slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+            <iframe src="{! v.getInvoiceUrl +'apex/PM_generateInvoicePDF_EN?Id=' + v.recordId }" width="100%" height="500px;" frameBorder="0"/>  
+        </div> 
+    </aura:if>
+    
+    <aura:if isTrue="{!v.getInvoiceStatus!='Draft'}">
+        <div class="slds-modal__content slds-align_absolute-center slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+            This invoice is already sent to the customer. Please create another one!
+        </div>
+    </aura:if>
+
+    <aura:if isTrue="{!v.getLanguage==null }">
+        <div class="slds-modal__content slds-align_absolute-center slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+            Please select an invoice language first!
+        </div>
+    </aura:if>
+
+
+
+    <!--aura:if isTrue="{!v.getInvoiceStatus=='Sent'}">
+        <div class="slds-modal__content slds-align_absolute-center slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+            This invoice is already sent to the customer. Please create another one!
+        </div>
+    
+    </aura:if-->
+
+
+    <!-- MODAL FOOTER -->
+    <footer>
+        <aura:if isTrue="{!v.getInvoiceStatus=='Draft'}">
+            <div class="slds-col modal-footer slds-modal__footer">
+                <lightning:button variant="Neutral" label="Cancel" title="Cancel" onclick="{!c.handleCancel}" />
+                <lightning:button variant="brand" label="Save and Send" title="Save and Send" onclick="{!c.handleClick }" />
+            </div>
+        </aura:if>
+
+    </footer>
+
+</aura:component>

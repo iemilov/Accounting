@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Betriebsausgaben</fullName>
+                <default>false</default>
+                <label>Betriebsausgaben</label>
+            </value>
+            <value>
+                <fullName>Raumkosten und sonstige Grundstücksaufwendungen</fullName>
+                <default>false</default>
+                <label>Raumkosten und sonstige Grundstücksaufwendungen</label>
+            </value>
+            <value>
+                <fullName>Sonstige unbeschränkt abziehbare Betriebsausgaben</fullName>
+                <default>false</default>
+                <label>Sonstige unbeschränkt abziehbare Betriebsausgaben</label>
+            </value>
+            <value>
+                <fullName>Beschränkt abziehbare Betriebsausgaben und Gewerbesteuer</fullName>
+                <default>false</default>
+                <label>Beschränkt abziehbare Betriebsausgaben und Gewerbesteuer</label>
+            </value>
+            <value>
+                <fullName>Kraftfahrzeugkosten und andere Fahrtkosten</fullName>
+                <default>false</default>
+                <label>Kraftfahrzeugkosten und andere Fahrtkosten</label>
+            </value>
+            <value>
+                <fullName>Absetzung für Abnutzung (AfA)</fullName>
+                <default>false</default>
+                <label>Absetzung für Abnutzung (AfA)</label>
+            </value>
+            <value>
+                <fullName>Privatentnahme</fullName>
+                <default>false</default>
+                <label>Privatentnahme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,131 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-21-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<apex:page controller="PM_EUR_Ctrl" renderAs="pdf">
+
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Einnahme-Überschussrechnung Lanespot solutions</h1>
+<hr/>
+
+<table style="width:100%">
+    <tr>
+    <th>Steuerjahr</th>
+        <td><apex:outputText value="{!currentYear}"/></td>
+    </tr>
+    <tr><th>Steuernummer</th>
+        <td><apex:outputText value="{!$Label.Steuernummer}"/></td>
+    </tr>
+    <tr><th>Name</th>
+        <td ><apex:outputText value="{!$Label.Company_Name}"/></td>
+    </tr>
+    <tr><th>Anschrift</th>
+        <td><apex:outputText value="{!$Label.Anschrift}"/></td>
+    </tr>
+</table>
+
+<br/>
+
+<hr/>
+<h2>Einnahmen</h2>
+<hr/>
+
+<table style="width:45%">
+    <tr><th>Umsatzsteuerpflichtig</th>
+        <td><apex:outputText value="{!income.taxed_income}"/></td>
+    </tr>
+    <tr><th>Umsatzsteuerfrei</th>
+        <!--td><apex:outputText value="{!Account.SourceCampaign__pr.Name}"/></td-->
+    </tr>
+    <tr><th>Vereinnahmte Umsatzsteuer</th>
+        <td><apex:outputText value="{!income.paid_taxes}"/></td>
+    </tr>
+    <tr><th>Erstattete Umsatzsteuer</th>
+        <!--td><apex:outputText value="{!Account.SourceCampaign__pr.Touchpoint__c}"/></td-->
+    </tr>
+    <tr><th>Private KFZ-Nutzung</th>
+        <!--td><apex:outputText value="{!Account.SourceCampaign__pr.Touchpoint__c}"/></td-->
+    </tr>
+    <tr><th >Summe Betriebseinnahmen</th>
+        <td><apex:outputText value="{!income.total_income}"/></td>
+    </tr>
+</table>
+
+<br/>
+
+<hr/>
+<h2>Betriebsausgaben</h2>
+<hr/>
+
+<table style="width:45%">
+    <tr><th>Betriebsausgaben</th>
+        <td><apex:outputText value="{!expense.operating_outcomes}"/></td>
+    </tr>
+    <tr><th>Raumkosten</th>
+        <td><apex:outputText value="{!expense.property_outcomes}"/></td>
+    </tr>
+    <tr><th>Afa</th>
+        <td><apex:outputText value="{!expense.afa}"/></td>
+    </tr>
+    <tr><th>unbeschränkt abziehbare Betriebsausgaben</th>
+        <td><apex:outputText value="{!expense.fully_deductible_outcomes}"/></td>
+    </tr>
+    <tr><th>Beschränkt abziehbare Betriebsausgaben</th>
+        <td><apex:outputText value="{!expense.limited_deductible_outcomes}"/></td>
+    </tr>
+    <tr><th>Kraftfahrzeugkosten</th>
+        <td><apex:outputText value="{!expense.vehicle_outcomes}"/></td>
+    </tr>
+    <tr><th>Gezahlte Vorsteuer</th>
+        <td><apex:outputText value="{!expense.paid_input_taxes}"/></td>
+    </tr>
+    <tr><th>Summe Betriebsausgaben</th>
+        <td><apex:outputText value="{!expense.total_expense}"/></td>
+    </tr>
+</table>
+
+<br/>
+
+<hr/>
+<table style="width:100%">
+    <tr><th>Gewinn</th>
+        <td>
+            <apex:outputText value="{0,number,###0€}">
+                <apex:param value="{!profit}" />
+            </apex:outPutText>
+        </td>
+    </tr>
+</table>
+<hr/>
+
+<br/>
+
+<div style="page-break-after:always;">
+</div>
+<hr/>
+<h2>Andere Ausgaben(Krankenkassse, Spenden, Betreuung, Rente)</h2>
+<hr/>
+
+<table style="width:45%">
+    <tr><th>Krankenkasse</th>
+        <!--td><apex:outputText value="{!income.taxed_income}"/></td-->
+    </tr>
+    <tr><th>Renten</th>
+        <!--td><apex:outputText value="{!Account.SourceCampaign__pr.Name}"/></td-->
+    </tr>
+    <tr><th>Spenden</th>
+        <!--td><apex:outputText value="{!income.paid_taxes}"/></td-->
+    </tr>
+    <tr><th>Kinderbetreuung</th>
+        <!--td><apex:outputText value="{!income.paid_taxes}"/></td-->
+    </tr>
+    <tr><th>Andere</th>
+        <!--td><apex:outputText value="{!income.paid_taxes}"/></td-->
+    </tr>
+</table>
+
+
+</apex:page>

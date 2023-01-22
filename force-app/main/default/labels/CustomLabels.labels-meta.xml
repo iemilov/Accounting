@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Bank</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bank</shortDescription>
+        <value>Solarisbank AG</value>
+    </labels>
+    <labels>
+        <fullName>Anschrift</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Company Address</shortDescription>
+        <value>Rosenthaler Str. 5, 10119 Berlin</value>
+    </labels>
+    <labels>
+        <fullName>BIC</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BIC</shortDescription>
+        <value>SOBKDEB2XXX</value>
+    </labels>
+    <labels>
+        <fullName>Company_Name</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Company Name</shortDescription>
+        <value>Lanespot Solutions</value>
+    </labels>
+    <labels>
+        <fullName>Company_Postalcode</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Company Postalcode</shortDescription>
+        <value>10119 Berlin</value>
+    </labels>
+    <labels>
+        <fullName>Company_Street</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Company Street</shortDescription>
+        <value>Rosenthaler Str. 5</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Email</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Email</shortDescription>
+        <value>iemilov@lanespot.com</value>
+    </labels>
+    <labels>
+        <fullName>EmailTemplate_SendInvoice_DE</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmailTemplate_SendInvoice_DE</shortDescription>
+        <value>Send_Invoice_1602844205597</value>
+    </labels>
+    <labels>
+        <fullName>EmailTemplate_SendInvoice_EN</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmailTemplate_SendInvoice_EN</shortDescription>
+        <value>Send_Invoice_EN_1603457487699</value>
+    </labels>
+    <labels>
+        <fullName>IBAN</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IBAN</shortDescription>
+        <value>DE90110101015776664608</value>
+    </labels>
+    <labels>
+        <fullName>Mobile</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mobile</shortDescription>
+        <value>+(49) 15140748149</value>
+    </labels>
+    <labels>
+        <fullName>Steuernummer</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Steuernummer</shortDescription>
+        <value>34/277/04078</value>
+    </labels>
+    <labels>
+        <fullName>USt_ldNr</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>USt-ldNr</shortDescription>
+        <value>DE343779945</value>
+    </labels>
+    <labels>
+        <fullName>BccAddresses</fullName>
+        <categories>Accounting</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bcc Addresses</shortDescription>
+        <value>is.emilov@gmail.com</value>
+    </labels>
+</CustomLabels>

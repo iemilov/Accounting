@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_sent</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>AmountNetto__c</columns>
+    <columns>AmountTotal__c</columns>
+    <columns>VAT__c</columns>
+    <columns>Month__c</columns>
+    <columns>DisplayAccountName__c</columns>
+    <columns>InvoiceSentDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Draft</value>
+    </filters>
+    <label>Not sent</label>
+</ListView>
