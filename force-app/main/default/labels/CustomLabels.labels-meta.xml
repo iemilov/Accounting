@@ -6,7 +6,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bank</shortDescription>
-        <value>!PUT YOUR BANK HERE!</value>
+        <value>N26 Bank</value>
     </labels>
     <labels>
         <fullName>Anschrift</fullName>
@@ -14,7 +14,8 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Address</shortDescription>
-        <value>!PUT COMPANY ADDRESS!</value>
+        <value>Schwesternberg 9
+88131 Lindau (Bodensee)</value>
     </labels>
     <labels>
         <fullName>BIC</fullName>
@@ -22,7 +23,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BIC</shortDescription>
-        <value>!PUT BIC!</value>
+        <value>NTSBDEB1XXX</value>
     </labels>
     <labels>
         <fullName>Company_Name</fullName>
@@ -30,7 +31,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Name</shortDescription>
-        <value>"PUT COMPANY NAME"</value>
+        <value>CloudShift solutions GmbH</value>
     </labels>
     <labels>
         <fullName>Company_Postalcode</fullName>
@@ -38,7 +39,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Postalcode</shortDescription>
-        <value>!PUT POSTAL CODE AND CITY!</value>
+        <value>88131</value>
     </labels>
     <labels>
         <fullName>Company_Street</fullName>
@@ -46,7 +47,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Street</shortDescription>
-        <value>!PUT COMPANY STREET AND NUMBER!</value>
+        <value>Schwesternberg 9</value>
     </labels>
     <labels>
         <fullName>Contact_Email</fullName>
@@ -54,7 +55,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Contact Email</shortDescription>
-        <value>!PUT CONTACT EMAIL!</value>
+        <value>joachim.lintl@cloudshift.solutions</value>
     </labels>
     <labels>
         <fullName>EmailTemplate_SendInvoice_DE</fullName>
@@ -78,7 +79,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>IBAN</shortDescription>
-        <value>!PUT BANK IBAN HERE!</value>
+        <value>DE65 1001 1001 2410 9304 43</value>
     </labels>
     <labels>
         <fullName>Mobile</fullName>
@@ -86,7 +87,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Mobile</shortDescription>
-        <value>!COMPANY MOBILE COMES HERE!</value>
+        <value>+49 162 2113685</value>
     </labels>
     <labels>
         <fullName>Steuernummer</fullName>
@@ -110,6 +111,6 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bcc Addresses</shortDescription>
-        <value>!BCC EMAIL ADDRESS COMES HERE!</value>
+        <value>jlintl@cloudshift.solutions</value>
     </labels>
 </CustomLabels>

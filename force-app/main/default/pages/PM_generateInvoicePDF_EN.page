@@ -13,7 +13,7 @@
 <apex:page showHeader="false" standardController="Invoice__c" extensions="PM_generateInvoicePDF_VF_CTRL" action="{!updateInvoice}" standardStylesheets="false" renderAs="PDF">
 
 <div >
-    <img src="{!$Resource.Lanespot}" width="15%"/>
+    <img src="{!$Resource.CSS_Logo}" width="15%"/>
 </div>
 
 <p><u>{!$Label.Company_Name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!$Label.Anschrift} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile: {!$Label.Mobile}</u></p>
