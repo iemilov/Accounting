@@ -54,6 +54,14 @@
         <type>Flexipage</type>
         <pageOrSobjectType>Milestone1_Project__c</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
@@ -75,7 +83,7 @@
     <tabs>Invoice__c</tabs>
     <tabs>Expense__c</tabs>
     <tabs>TimeCard__c</tabs>
-    <tabs>AdditionalRevenue__c</tabs>
+    <tabs>Revenue__c</tabs>
     <tabs>EUR</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Accounting_UtilityBar</utilityBar>

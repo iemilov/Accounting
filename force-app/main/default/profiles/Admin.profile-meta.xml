@@ -53,27 +53,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>AdditionalRevenue__c.AmountNetto__c</field>
+        <field>AccountingSettings__mdt.AmountVAT__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>AdditionalRevenue__c.DateIncurred__c</field>
+        <field>AccountingSettings__mdt.PaymentPeriod__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>AdditionalRevenue__c.MonthlyRepeatable__c</field>
+        <field>AccountingSettings__mdt.SubType__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>AdditionalRevenue__c.Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>AdditionalRevenue__c.VAT__c</field>
+        <field>AccountingSettings__mdt.Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -698,6 +693,36 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Revenue__c.AmountNetto__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Revenue__c.DateIncurred__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Revenue__c.MonthlyRepeatable__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Revenue__c.Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Revenue__c.VAT__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Revenue__c.VatDeduction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>TimeCard__c.Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -765,10 +790,13 @@
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AdditionalRevenue__c-Revenue Layout</layout>
+        <layout>AccountingSettings__mdt-Accounting Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AssignResourse__c-Assign Resourse Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>EURConfig__mdt-EUR Config Layout</layout>
@@ -792,17 +820,11 @@
         <layout>Milestone1_Task__c-Project Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Revenue__c-Revenue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>TimeCard__c-Time Card Layout</layout>
     </layoutAssignments>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>AdditionalRevenue__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -872,6 +894,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Revenue__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>TimeCard__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -887,10 +918,6 @@
         <apexPage>PM_generateInvoicePDF_EN</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <tabVisibilities>
-        <tab>AdditionalRevenue__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
     <tabVisibilities>
         <tab>EUR</tab>
         <visibility>DefaultOn</visibility>
@@ -917,6 +944,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Milestone1_Task__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Revenue__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

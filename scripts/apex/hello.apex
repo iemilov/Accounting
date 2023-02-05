@@ -8,3 +8,10 @@
 string tempvar = 'Enter_your_name_here';
 System.debug('Hello World!');
 System.debug('My name is ' + tempvar);
+
+
+
+
+SELECT Id,name, Developername, Subject FROM EmailTemplate where DeveloperName='Send_Invoice_1602844205597'
+
+system.debug('testsss '+Constants.EmailTemplate_SendInvoice_DE_ID);

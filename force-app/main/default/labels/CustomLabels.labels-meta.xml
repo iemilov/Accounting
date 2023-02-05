@@ -54,7 +54,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Contact Email</shortDescription>
-        <value>iemilov@lanespot.com</value>
+        <value>is.emilov@gmail.com</value>
     </labels>
     <labels>
         <fullName>EmailTemplate_SendInvoice_DE</fullName>

@@ -152,13 +152,14 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
-    <label>Additional Revenue</label>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Revenue</label>
     <nameField>
+        <displayFormat>RV{0000}</displayFormat>
         <label>Revenue Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Additional Revenues</pluralLabel>
+    <pluralLabel>Revenues</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

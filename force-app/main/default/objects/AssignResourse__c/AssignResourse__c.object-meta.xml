@@ -155,8 +155,9 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Assign Resourse</label>
     <nameField>
+        <displayFormat>AR{0000}</displayFormat>
         <label>Assign Resourse Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Assign Resourses</pluralLabel>
     <searchLayouts></searchLayouts>

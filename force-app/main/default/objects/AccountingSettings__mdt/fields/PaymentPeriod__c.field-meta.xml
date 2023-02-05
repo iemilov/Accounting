@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Language__c</fullName>
+    <fullName>PaymentPeriod__c</fullName>
     <externalId>false</externalId>
-    <label>Language</label>
-    <required>true</required>
-    <trackTrending>false</trackTrending>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Payment Period</label>
+    <required>false</required>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>German</fullName>
+                <fullName>Monthly</fullName>
                 <default>true</default>
-                <label>German</label>
+                <label>Monthly</label>
             </value>
             <value>
-                <fullName>English</fullName>
+                <fullName>Annually</fullName>
                 <default>false</default>
-                <label>English</label>
+                <label>Annually</label>
             </value>
         </valueSetDefinition>
     </valueSet>

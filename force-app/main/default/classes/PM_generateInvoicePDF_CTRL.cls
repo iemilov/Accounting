@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-22-2023
+ * @last modified on  : 01-28-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
  * Modifications Log 
  * Ver   Date         Author                               Modification
@@ -58,7 +58,9 @@ public with sharing class PM_generateInvoicePDF_CTRL {
             NotificationService.sendEmail(emailTemplate, currentInvoice,filesList);
             if (NotificationService.sendResult){
                 PM_InvoiceUtils.updateInvoiceStatus(currentInvoice);
+                PM_InvoiceUtils.upsertRevenues();
                 PM_TimeCard_Service.updateTimeCardStatus(currentInvoice);
+
             }
             else {
                 messageResponse = NotificationService.sendErrorMessage;

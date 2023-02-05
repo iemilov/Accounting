@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Language__c</fullName>
+    <fullName>Type__c</fullName>
     <externalId>false</externalId>
-    <label>Language</label>
-    <required>true</required>
-    <trackTrending>false</trackTrending>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Type</label>
+    <required>false</required>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>German</fullName>
+                <fullName>Revenue</fullName>
                 <default>true</default>
-                <label>German</label>
+                <label>Revenue</label>
             </value>
             <value>
-                <fullName>English</fullName>
+                <fullName>Expense</fullName>
                 <default>false</default>
-                <label>English</label>
+                <label>Expense</label>
             </value>
         </valueSetDefinition>
     </valueSet>

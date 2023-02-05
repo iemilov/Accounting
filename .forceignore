@@ -13,3 +13,5 @@ package.xml
 
 # Ignore profile
 force-app/main/default/profiles/**
+#force-app/main/default/reports/**
+#force-app/main/default/dashboards/**

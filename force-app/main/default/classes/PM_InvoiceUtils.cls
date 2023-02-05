@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 10-31-2022
+ * @last modified on  : 02-02-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
  * Modifications Log 
  * Ver   Date         Author                               Modification
@@ -32,5 +32,30 @@ public with sharing class PM_InvoiceUtils {
              System.debug(Constants.ERROR_MESSAGE+e.getMessage());
          }
      }
+
+    // this method sets the total amount of netto invoices for the current month
+    public static void upsertRevenues(){
+        AggregateResult invoicesAmount = [SELECT SUM(AmountNetto__c) total
+            FROM Invoice__c
+            where InvoiceSentDate__c=THIS_MONTH];
+        List<Revenue__c> revList= new List<Revenue__c>();
+        Revenue__c rev= new Revenue__c();
+        rev.type__c='Invoicing';
+        rev.DateIncurred__c= Date.today();
+        rev.AmountNetto__c=(Decimal)invoicesAmount.get('total');
+        List <Revenue__c> existingRevenues=getRevenues('Invoicing');
+        rev.id=!existingRevenues.isEmpty()?existingRevenues.get(0).id:null;
+        revList.add(rev);
+        try {
+            upsert revList;
+        }catch(Exception e){
+            System.debug(Constants.ERROR_MESSAGE+e.getMessage());
+        }
+    }
+
+    private static List <Revenue__c> getRevenues(String type){
+        return [select id from Revenue__c where CreatedDate=THIS_MONTH and type__c=:type];
+    }
+
 
 }

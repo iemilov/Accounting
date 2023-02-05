@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Language__c</fullName>
+    <fullName>VatDeduction__c</fullName>
     <externalId>false</externalId>
-    <label>Language</label>
-    <required>true</required>
+    <label>VAT Deduction</label>
+    <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -11,14 +11,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>German</fullName>
+                <fullName>19</fullName>
                 <default>true</default>
-                <label>German</label>
+                <label>19%</label>
             </value>
             <value>
-                <fullName>English</fullName>
+                <fullName>7</fullName>
                 <default>false</default>
-                <label>English</label>
+                <label>7%</label>
             </value>
         </valueSetDefinition>
     </valueSet>

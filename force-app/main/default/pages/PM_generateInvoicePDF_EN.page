@@ -2,7 +2,7 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 01-21-2023
+  @last modified on  : 01-22-2023
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
   Modifications Log 
   Ver   Date         Author                               Modification
@@ -13,7 +13,7 @@
 <apex:page showHeader="false" standardController="Invoice__c" extensions="PM_generateInvoicePDF_VF_CTRL" action="{!updateInvoice}" standardStylesheets="false" renderAs="PDF">
 
 <div >
-    <img src="{!$Resource.Lanespot}" width="15%"/>
+    <img src="{!$Resource.CompanyLogo}" width="15%"/>
 </div>
 
 <p><u>{!$Label.Company_Name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!$Label.Anschrift} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile: {!$Label.Mobile}</u></p>
@@ -153,9 +153,9 @@ Rosenthaler Str. 5&nbsp; &nbsp; &nbsp;      &nbsp; &nbsp; &nbsp;E-Mail: iemilov@
 <br/>
 <br/>
 <br/>
-<!--/div >
-  <img src="{!$Resource.Lanespot}" width="15%"/>
-</div-->
+<div >
+  <img src="{!$Resource.CompanyLogo}" width="15%"/>
+</div>
 <br/>
 
 <apex:pageBlock >
