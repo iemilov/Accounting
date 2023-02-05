@@ -6,7 +6,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bank</shortDescription>
-        <value>Solarisbank AG</value>
+        <value>BANK</value>
     </labels>
     <labels>
         <fullName>Anschrift</fullName>
@@ -22,7 +22,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BIC</shortDescription>
-        <value>SOBKDEB2XXX</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>Company_Name</fullName>
@@ -38,7 +38,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Postalcode</shortDescription>
-        <value>10119 Berlin</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>Company_Street</fullName>
@@ -46,7 +46,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Company Street</shortDescription>
-        <value>Rosenthaler Str. 5</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>Contact_Email</fullName>
@@ -54,7 +54,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Contact Email</shortDescription>
-        <value>is.emilov@gmail.com</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>EmailTemplate_SendInvoice_DE</fullName>
@@ -62,7 +62,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>EmailTemplate_SendInvoice_DE</shortDescription>
-        <value>Send_Invoice_1602844205597</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>EmailTemplate_SendInvoice_EN</fullName>
@@ -70,7 +70,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>EmailTemplate_SendInvoice_EN</shortDescription>
-        <value>Send_Invoice_EN_1603457487699</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>IBAN</fullName>
@@ -78,7 +78,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>IBAN</shortDescription>
-        <value>DE90110101015776664608</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>Mobile</fullName>
@@ -86,7 +86,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Mobile</shortDescription>
-        <value>+(49) 15140748149</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>Steuernummer</fullName>
@@ -94,7 +94,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Steuernummer</shortDescription>
-        <value>34/277/04078</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>USt_ldNr</fullName>
@@ -102,7 +102,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>USt-ldNr</shortDescription>
-        <value>DE343779945</value>
+        <value>xxxxxxx</value>
     </labels>
     <labels>
         <fullName>BccAddresses</fullName>
@@ -110,6 +110,6 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bcc Addresses</shortDescription>
-        <value>is.emilov@gmail.com</value>
+        <value>xxxxxxx</value>
     </labels>
 </CustomLabels>
